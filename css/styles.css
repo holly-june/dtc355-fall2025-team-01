@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.pinecone-logo {
+    height: 10%;
+    width: 10%;
+}
+
+.img-index-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.index-hyperion {
+    height: 7%;
+    width: 7%;
+}
+
+.index-apple {
+    height: 20%;
+    width: 20%;
+}
+
+.roots-hemlock {
+    display: flex;
+    flex-direction: column;
+}
+.roots-img {
+    height: 75%;
+    width: 75%;
+}
+
+.index-hemlock {
+    height: 10%;
+    width: 10%;
+}
+
+.about-pinecone {
+    height: 50%;
+    width: 50%;
+}
+
+.apple-page-img {
+    height: 100%;
+    width: 100%;
+}
+
