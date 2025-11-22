@@ -1,45 +1,201 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 4%;
 }
 
 .pinecone-logo {
     height: 10%;
     width: 10%;
+    margin-left: 4%;
+}
+
+nav {
+    height: 20%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 49;
+    display: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+}
+
+#mobile-btn {
+    z-index: 50;
+    border: none;
+    border-radius: 16%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    margin: 12px;
+    height: 40px;
+    width: 40px;
+}
+
+#mobile-btn .bar {
+    width: 24px;
+    height: 4px;
+    background: black;
+}
+
+nav.mobile-menu {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 12px;
+}
+
+.dropdown {
+    position: relative;
+    /* anchor for submenu */
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -160px;
+    background: #A5B289;
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
 }
 
 .img-index-links {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hyperion-apple {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
 }
 
 .index-hyperion {
-    height: 7%;
-    width: 7%;
+    height: auto;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
 }
 
 .index-apple {
-    height: 20%;
+    height: auto;
     width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
 .roots-hemlock {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .roots-img {
-    height: 75%;
-    width: 75%;
+    height: auto;
+    width: 70%;
+    margin-bottom: -10%;
 }
 
 .index-hemlock {
-    height: 10%;
+    height: auto;
     width: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-pinecone {
-    height: 50%;
+    height: auto;
     width: 50%;
+    justify-content: center;
+}
+
+.about-trees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-hyperion {
+    height: auto;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-apple {
+    height: auto;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-hemlock {
+    height: auto;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .apple-page-img {
@@ -47,3 +203,30 @@ header {
     width: 100%;
 }
 
+@media (min-width: 768px) {
+    nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		height: auto;
+		position: relative;
+		width: 50%;
+		background-color: transparent;
+		left: auto;
+		right: 0;
+}
+
+    #mobile-btn {
+        display: none;
+    }
+
+    .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    left: -160px;
+    background: #A5B289;
+    display: none;
+}
+}

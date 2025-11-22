@@ -11,11 +11,26 @@
 <body>
     <header>
         <img src="img/pinecone.png" class="pinecone-logo" alt="Small illustration of light brown pinecone">
-        <section class=“menu-bar”>
-            <nav>
-                <buttons></buttons>
-            </nav>
-        </section>
+        <button id="mobile-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button id="trees-btn" class="dropdown-toggle">Trees</button>
+                <div class="dropdown-menu">
+                    <a href="westernhemlock.html">Western Hemlock</a>
+                    <a href="hyperion.html">The Hyperion</a>
+                    <a href="appletree.html">The Old Apple Tree</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main>
@@ -26,11 +41,11 @@
             <h2>About</h2>
             <img src="img/pinecone.png" class="about-pinecone" alt="Large illustration of a light brown pinecone">
             <div class="about-trees">
-                <a href="westernhemlock.html"><img src="img/western-hemlock.png" class="index-hemlock"
+                <a href="westernhemlock.html" class="tree-link"><img src="img/western-hemlock.png" class="about-hemlock"
                             alt="Small illustration of fluffy, green, triangle-shaped tree"> Western Hemlock</a>
-                <a href="hyperion.html"><img src="img/hyperion.png" class="index-hyperion"
+                <a href="hyperion.html" class="tree-link"><img src="img/hyperion.png" class="about-hyperion"
                             alt="Small illustration of tall, skinny, green tree"> Hyperion</a>
-                <a href="appletree.html"><img src="img/apple-tree.png" class="index-apple"
+                <a href="appletree.html" class="tree-link"><img src="img/apple-tree.png" class="about-apple"
                             alt="Small illustration of fluffy green apple tree"> Old Apple Tree</a>
             </div>
             <p>Through hand drawn illustrations, animations, and interactive storytelling, explore histories of trees.</p>
@@ -40,4 +55,6 @@
             <p>&copy; 2025 Getting to the Root | Angela Perkins and Marnie Cooper</p>
         </footer>
     </main>
+
+    <script src="script.js" crossorigin="anonymous"></script>
 </body>

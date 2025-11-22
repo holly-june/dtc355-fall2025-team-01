@@ -11,11 +11,26 @@
 <body>
     <header>
         <img src="img/pinecone.png" class="pinecone-logo" alt="Small illustration of light brown pinecone">
-        <section class=“menu-bar”>
-            <nav>
-                <buttons></buttons>
-            </nav>
-        </section>
+        <button id="mobile-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button id="trees-btn" class="dropdown-toggle">Trees</button>
+                <div class="dropdown-menu">
+                    <a href="westernhemlock.html">Western Hemlock</a>
+                    <a href="hyperion.html">The Hyperion</a>
+                    <a href="appletree.html">The Old Apple Tree</a>
+                </div>
+            </div>
+
+            <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main>
@@ -27,15 +42,16 @@
         <section>
             <div class="index-img-links">
                 <div class="hyperion-apple">
-                    <a href="hyperion.html"><img src="img/hyperion.png" class="index-hyperion"
+                    <a href="hyperion.html" class="tree-link"><img src="img/hyperion.png" class="index-hyperion"
                             alt="Small illustration of tall, skinny, green tree"> Hyperion</a>
-                    <a href="appletree.html"><img src="img/apple-tree.png" class="index-apple"
+                    <a href="appletree.html" class="tree-link"><img src="img/apple-tree.png" class="index-apple"
                             alt="Small illustration of fluffy green apple tree"> Old Apple Tree</a>
                 </div>
                 <div class="roots-hemlock">
                     <img src="img/roots.png" class="roots-img" alt="illustration of dark brown underground tree roots">
-                    <a href="westernhemlock.html"><img src="img/western-hemlock.png" class="index-hemlock"
-                            alt="Small illustration of fluffy, green, triangle-shaped tree"> Western Hemlock</a>
+                    <a href="westernhemlock.html" class="tree-link"><img src="img/western-hemlock.png"
+                            class="index-hemlock" alt="Small illustration of fluffy, green, triangle-shaped tree">
+                        Western Hemlock</a>
                 </div>
             </div>
             <p>Quiet giants live among us, carrying centuries of history in their roots and branches. Getting to the
@@ -45,17 +61,11 @@
                 you're a nature lover, history buff, student, or creative soul, there's a story in the roots waiting to
                 be discovered. </p>
         </section>
-
-        <section class="tree-buttons">
-            <h3>About</h3>
-            <h3>Fun Fact</h3>
-            <h3>Western Hemlock</h3>
-            <h3>The Hyperion</h3>
-            <h3>The old Apple Tree</h3>
-        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Getting to the Root | Angela Perkins and Marnie Cooper</p>
     </footer>
+
+    <script src="script.js" crossorigin="anonymous"></script>
 </body>
