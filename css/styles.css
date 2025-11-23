@@ -1,6 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
+}
+main {
+    padding:0;
+
 }
 
 header {
@@ -9,6 +14,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    padding: 15px 0;
 }
 
 h1,
@@ -16,13 +27,28 @@ h2 {
     text-align: center;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
 p {
     margin: 4%;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.hero-container {
+    padding: 30px 20px;
+    margin-bottom: 50px;
 }
 
 .pinecone-logo {
-    height: 10%;
-    width: 10%;
+    height: 40px;
+    width: auto;
     margin-left: 4%;
 }
 
@@ -39,6 +65,8 @@ nav {
     z-index: 49;
     display: none;
 }
+
+
 
 nav a {
     display: flex;
@@ -110,10 +138,14 @@ nav.mobile-menu {
     cursor: pointer;
 }
 
-.img-index-links {
-    display: flex;
-    flex-direction: row;
+.index-img-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
     align-items: center;
+    max-width: 400px;
+    margin: 30px 0;
     justify-content: center;
 }
 
@@ -126,43 +158,36 @@ nav.mobile-menu {
 }
 
 .hyperion-apple {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15%;
+    display: contents;
 }
 
 .index-hyperion {
     height: auto;
-    width: 15%;
-    display: flex;
-    flex-direction: column;
+    width: 80px;
+
 }
 
 .index-apple {
     height: auto;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
+    width: 100px;
 }
 
 .roots-hemlock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: contents;
+    
 }
 
 .roots-img {
-    height: auto;
-    width: 70%;
-    margin-bottom: -10%;
+    grid-column: 1 /3;
+    grid-row: 2;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .index-hemlock {
     height: auto;
-    width: 10%;
-    display: flex;
-    flex-direction: column;
+    width: 60px;
 }
 
 .about-pinecone {
@@ -203,6 +228,33 @@ nav.mobile-menu {
     width: 100%;
 }
 
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 40px;
+   
+}
+
+footer p {
+   font-size: .65rem;
+}
+
+@media (min-width: 480px) {
+    .roots-hemlock {
+        align-items: center;
+    }
+
+    .roots-img {
+        width: 60%;
+        margin: 20px auto;
+    }
+    
+    .hyperion-apple {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
 @media (min-width: 768px) {
     nav {
 		display: flex;
@@ -214,19 +266,92 @@ nav.mobile-menu {
 		background-color: transparent;
 		left: auto;
 		right: 0;
-}
+        padding: 20px;
+    }
 
     #mobile-btn {
         display: none;
     }
 
     .dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 25px;
-    left: -160px;
-    background: #A5B289;
-    display: none;
-}
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        left: -160px;
+        background: #A5B289;
+        display: none;
+    }
+    .index-img-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 100%;
+        margin: 50px 0;
+        gap: 40px;
+    }
+
+    .index-img-links + p {
+        margin-top: 40px;
+    }
+
+    .hyperion-apple {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .roots-hemlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roots-img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .index-hyperion,
+    .index-apple,
+    .index-hemlock {
+        width: 150px;
+    }
+
+    .pinecone-logo {
+        width: 45px;
+        height: auto;
+    }
+
+    .roots-img {
+        width: 50%;
+        margin-bottom: 20px;
+
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    
+    }
+    
+    p {
+        font-size: 1.2rem;
+        margin: 2% 5%;
+        line-height: 1.2;
+    }
+    .hero-container {
+        padding: 50px 30px;
+        margin-bottom: 50px;
+    }
+    footer {
+        text-align: center;
+        padding: 40px 30px;
+        margin-top: 60px;
+        font-size: 1.5rem;
+    }
 }
