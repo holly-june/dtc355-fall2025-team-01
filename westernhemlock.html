@@ -45,8 +45,35 @@
             </div>
 
             <div class="desktop-row">
-                <img src="img/western-hemlock.png" class="hemlock-page-img"
-                    alt="Large illustration of fluffy, green, triangle-shaped tree">
+                <section id="hemlock-fact" class="overlay">
+                    <span onclick="closeHemlockFact()">&times;</span>
+                    <h5>Fun Fact</h5>
+                    <p>Western Hemlock</p>
+
+                    <p>According to Pacific Northwest Indigenous tradition, when Mother Nature gave out branches and
+                        needles to young trees, the Hemlock arrived last. By the time it reached the front, all the
+                        grand
+                        branches were gone. All the long needles had been claimed.</p>
+
+                    <p>What remained were small, soft needles no other tree wanted. Short branches that drooped instead
+                        of
+                        reaching skyward. Just enough to survive, but nothing to boast about.
+                        The hemlock took what was left without complaint.</p>
+
+                    <p>With those humble gifts, it became one of the most abundant trees in the forest, feeding the
+                        land,
+                        sheltering creatures, and standing strong through centuries.</p>
+
+                    <p>Humble beginnings can lead to the strongest roots.</p>
+                </section>
+
+                <div class="pinecone-and-tree">
+                    <img src="img/pinecone.png" onclick="openHemlockFact()" class="click-pinecone"
+                        alt="Small illustration of a light brown pinecone">
+
+                    <img src="img/western-hemlock.png" class="hemlock-page-img"
+                        alt="Large illustration of fluffy, green, triangle-shaped tree">
+                </div>
 
                 <div class="desktop-text">
                     <div class="trees-title-desktop">
@@ -73,4 +100,13 @@
     </main>
 
     <script src="script.js" crossorigin="anonymous"></script>
+    <script>
+        function openHemlockFact() {
+            document.getElementById("hemlock-fact").style.display = "block";
+        }
+
+        function closeHemlockFact() {
+            document.getElementById("hemlock-fact").style.display = "none";
+        }
+    </script>
 </body>

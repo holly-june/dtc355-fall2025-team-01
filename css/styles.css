@@ -43,6 +43,24 @@ p {
     text-align: left;
 }
 
+.overlay {
+    border: 2px solid black;
+    background-color: #A5B289;
+    width: 80%;
+    position: absolute;
+    display: none;
+}
+
+.overlay span {
+    cursor: pointer;
+}
+
+.click-pinecone {
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+}
+
 .hero-container {
     padding: 30px 20px;
     margin-bottom: 50px;
@@ -226,6 +244,12 @@ section {
     display: none;
 }
 
+.pinecone-and-tree {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
 .about-pinecone {
     display: block;
     height: auto;
@@ -331,6 +355,18 @@ footer p {
         left: -160px;
         background: #A5B289;
         display: none;
+    }
+
+    .pinecone-and-tree {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin-right: 100px;
+    }
+
+    .click-pinecone {
+        height: auto;
+        width: 20%;
     }
 
     .h2-mobile {
@@ -444,7 +480,8 @@ footer p {
 
     }
 
-    h3, h4 {
+    h3,
+    h4 {
         padding-left: 5%;
     }
 
@@ -457,6 +494,11 @@ footer p {
     .hero-container {
         padding: 50px 30px;
         margin-bottom: 50px;
+    }
+
+    .apple-page-img {
+        height: auto;
+        margin-right: 300px;
     }
 
     .about-pinecone {

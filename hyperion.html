@@ -45,8 +45,27 @@
             </div>
 
             <div class="desktop-row">
-                <img src="img/hyperion.png" class="hyperion-page-img"
-                    alt="Large illustration of tall, skinny, green tree">
+                <section id="hyperion-fact" class="overlay">
+                    <span onclick="closeHyperionFact()">&times;</span>
+                    <h5>Fun Fact</h5>
+                    <p>The Hyperion</p>
+                    <p>Hyperion's 380-foot height surpasses the Statue of Liberty but falls just short of the Empire
+                        State Building's roof.</p>
+
+                    <p>This ancient giant has been growing for 600-800 years, beginning its life during the Renaissance
+                        when Michelangelo painted the Sistine Chapel and da Vinci sketched his inventions.</p>
+
+                    <p>While human civilizations rose and fell, Hyperion quietly grew in California's misty forests,
+                        adding ring after ring, reaching toward the sky.</p>
+                </section>
+
+                <div class="pinecone-and-tree">
+                    <img src="img/pinecone.png" onclick="openHyperionFact()" class="click-pinecone"
+                        alt="Small illustration of a light brown pinecone">
+
+                    <img src="img/hyperion.png" class="hyperion-page-img"
+                        alt="Large illustration of tall, skinny, green tree">
+                </div>
 
                 <div class="desktop-text">
                     <div class="trees-title-desktop">
@@ -73,4 +92,13 @@
     </main>
 
     <script src="script.js" crossorigin="anonymous"></script>
+    <script>
+        function openHyperionFact() {
+            document.getElementById("hyperion-fact").style.display = "block";
+        }
+
+        function closeHyperionFact() {
+            document.getElementById("hyperion-fact").style.display = "none";
+        }
+    </script>
 </body>
