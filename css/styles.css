@@ -2,8 +2,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 main {
-    padding:0;
+    padding: 0;
     flex: 1;
 
 }
@@ -39,7 +40,8 @@ p {
     margin: 4%;
     font-size: 1.1rem;
     line-height: 1.4;
-    
+    text-align: left;
+
 }
 
 .hero-container {
@@ -146,7 +148,7 @@ nav.mobile-menu {
     grid-template-rows: auto auto auto;
     gap: 20px;
     align-items: center;
-    max-width: 400px;
+    max-width: 800px;
     margin: 30px 0;
     justify-content: center;
 }
@@ -161,8 +163,9 @@ nav.mobile-menu {
 
 .roots-hemlock {
     display: contents;
-    
+
 }
+
 .roots-hemlock .tree-link {
     grid-column: 1 /3;
     justify-self: center;
@@ -174,16 +177,14 @@ nav.mobile-menu {
 
 .index-hyperion {
     height: auto;
-    width: 60px;
+    width: 35%;
 
 }
 
 .index-apple {
     height: auto;
-    width: 80px;
+    width: 50%;
 }
-
-
 
 .roots-img {
     grid-column: 1 /3;
@@ -193,11 +194,9 @@ nav.mobile-menu {
     margin: 0 auto;
 }
 
-
-
 .index-hemlock {
     height: auto;
-    width: 60px;
+    width: 25%;
 }
 
 .trees-title h2,
@@ -212,25 +211,28 @@ section img {
 }
 
 section {
-    max-width: 800px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
 
-.trees-title {
+.trees-title-mobile {
     text-align: center;
-    margin: 30px 0;   
+    margin: 30px 0;
 }
 
+.trees-title-desktop {
+    display: none;
+}
 
 .about-pinecone {
     display: block;
     height: auto;
     width: 30%;
     margin: 60px auto 50px auto;
-    
+
 }
 
 .about-trees {
@@ -281,11 +283,11 @@ footer {
     text-align: center;
     padding: 30px 20px;
     margin: 40px;
-   
+
 }
 
 footer p {
-   font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 @media (min-width: 480px) {
@@ -297,7 +299,7 @@ footer p {
         width: 60%;
         margin: 20px auto;
     }
-    
+
     .hyperion-apple {
         margin-left: 0;
         justify-content: center;
@@ -306,15 +308,15 @@ footer p {
 
 @media (min-width: 768px) {
     nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		height: auto;
-		position: relative;
-		width: 50%;
-		background-color: transparent;
-		left: auto;
-		right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: auto;
+        position: relative;
+        width: 50%;
+        background-color: transparent;
+        left: auto;
+        right: 0;
         padding: 20px;
     }
 
@@ -331,33 +333,65 @@ footer p {
         background: #A5B289;
         display: none;
     }
+
+    .h2-mobile {
+        display: none;
+    }
+
+    .h2-desktop {
+        display: flex;
+        margin-left: 5%;
+    }
+
+    .desktop-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop-row {
+        display: flex;
+        flex-direction: row;
+        margin: auto 5%;
+    }
+
+    .trees-title-mobile {
+        display: none;
+    }
+
+    .trees-title-desktop {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
     .index-img-links {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto 30px auto;
         gap: 30px;
-        max-width: 1200px;
+        max-width: 2000px;
         margin: 50px auto;
         align-items: start;
     }
 
-    .index-img-links + p {
+    .index-img-links+p {
         margin-top: 40px;
     }
 
     .hyperion-apple {
         display: contents;
-
     }
 
     .roots-hemlock {
         display: contents;
     }
+
     .hyperion-apple .tree-link:last-child {
         grid-column: 3;
         grid-row: 1;
 
     }
+
     .roots-hemlock .tree-link {
         grid-column: 2;
         grid-row: 3;
@@ -367,54 +401,75 @@ footer p {
         grid-column: 2;
         grid-row: 1;
         width: 100%;
-        max-width: 550px;
         margin-bottom: 0;
     }
 
     .index-hyperion {
-        width: 100px;
-        max-height: 200px;
+        width: 40%;
+        height: auto;
         object-fit: contain;
 
     }
+
     .index-apple {
-        width: 150px;
+        width: 60%;
 
     }
+
     .index-hemlock {
-        width: 120px;
+        width: 25%;
 
     }
-    
 
     .pinecone-logo {
         width: 45px;
         height: auto;
     }
 
+    .about-img-desktop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trees-title h2,
+    .trees-title h3 {
+        text-align: left;
+    }
 
     h1 {
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 1.8rem;
-    
+
     }
-    
+
+    h3, h4 {
+        padding-left: 5%;
+    }
+
     p {
         font-size: 1.2rem;
         margin: 2% 5%;
         line-height: 1.2;
     }
+
     .hero-container {
         padding: 50px 30px;
         margin-bottom: 50px;
     }
 
     .about-pinecone {
-        width: 15%;
+        width: 50%;
         max-width: 150px;
+        margin: 30px auto;
     }
+
+    .about-trees {
+        margin: 10px;
+    }
+
     footer {
         text-align: center;
         padding: 40px 30px;
