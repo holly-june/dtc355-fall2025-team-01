@@ -35,6 +35,22 @@ h1 {
 h2 {
     font-size: 1.4rem;
 }
+.h2-mobile {
+    display: block;
+}
+.h2-desktop {
+    display: none;
+}
+
+.trees-title-mobile .h2-mobile {
+    text-align: left;
+    font-size: .9rem
+}
+
+.trees-title-mobile .h2-desktop {
+    text-align: left;
+    font-size: 1.1rem;
+}
 
 p {
     margin: 4%;
@@ -71,6 +87,23 @@ p {
     width: auto;
     margin-left: 4%;
     margin-top: 5px;
+}
+
+.pinecone-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+.pinecone-link span {
+    font-size: .7rem;
+    font-weight: normal;
+}
+.click-pinecone {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
 }
 
 nav {
@@ -216,11 +249,6 @@ nav.mobile-menu {
     width: 25%;
 }
 
-.trees-title h2,
-.trees-title h3 {
-    text-align: center;
-}
-
 section img {
     display: block;
     margin: 0 auto;
@@ -236,12 +264,26 @@ section {
 
 
 .trees-title-mobile {
-    text-align: center;
+    text-align: left;
     margin: 30px 0;
+    padding-left: 5%;
 }
+
+.trees-title-mobile h2,
+.trees-title-mobile h3,
+.trees-title-mobile h4 {
+    text-align: left;
+}
+
 
 .trees-title-desktop {
     display: none;
+}
+
+.trees-title-desktop h2,
+.trees-title-desktop h3,
+.trees-title-desktop h4 {
+    text-align: left;
 }
 
 .pinecone-and-tree {
@@ -363,12 +405,22 @@ footer p {
         align-items: start;
         margin-right: 100px;
     }
-
+    .overlay {
+        width: 50%; 
+        max-width: 500px;
+        padding: 40px;
+    }
     .click-pinecone {
+        width: 60px;
         height: auto;
-        width: 20%;
+    }
+    .pinecone-link span {
+        font-size: .85rem;
     }
 
+    .h2-mobile {
+        display: none;
+    }
     .h2-mobile {
         display: none;
     }
@@ -397,6 +449,7 @@ footer p {
         display: flex;
         flex-direction: column;
         text-align: left;
+        padding-left: 5%;
     }
 
     .index-img-links {
@@ -466,8 +519,16 @@ footer p {
         flex-direction: column;
     }
 
-    .trees-title h2,
-    .trees-title h3 {
+    .trees-title-desktop h2 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .trees-title-desktop h3 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .trees-title-desktop h4 {
+        font-size: 1.3rem;
         text-align: left;
     }
 
@@ -516,5 +577,10 @@ footer p {
         padding: 40px 30px;
         margin-top: 60px;
         font-size: 1.5rem;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 1rem;
     }
 }
