@@ -50,12 +50,14 @@ h2 {
 
 .trees-title-mobile .h2-mobile {
     text-align: left;
-    font-size: .9rem
+    font-size: .9rem;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 .trees-title-mobile .h2-desktop {
     text-align: left;
     font-size: 1.1rem;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 p {
@@ -63,6 +65,7 @@ p {
     font-size: 1.1rem;
     line-height: 1.4;
     text-align: left;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 .overlay {
@@ -135,6 +138,7 @@ nav a {
     font-weight: 400;
     font-style: normal;
     font-size: 120%;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 #mobile-btn {
@@ -196,6 +200,7 @@ nav.mobile-menu {
     color: inherit;
     padding: 0;
     cursor: pointer;
+font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 .index-img-links {
@@ -359,6 +364,7 @@ footer {
 
 footer p {
     font-size: 0.8rem;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 @media (min-width: 480px) {
@@ -422,6 +428,7 @@ footer p {
     }
     .pinecone-link span {
         font-size: .85rem;
+        font-family: 'Hedvig Letters Sans', sans-serif;
     }
 
     .h2-mobile {
@@ -528,22 +535,27 @@ footer p {
     .trees-title-desktop h2 {
         font-size: 1.2rem;
         text-align: left;
+        font-family: 'Hedvig Letters Sans', sans-serif;
     }
     .trees-title-desktop h3 {
         font-size: 1.5rem;
         text-align: left;
+        font-family: 'Hedvig Letters Sans', sans-serif;
     }
     .trees-title-desktop h4 {
         font-size: 1.3rem;
         text-align: left;
+        font-family: 'Hedvig Letters Sans', sans-serif;
     }
 
     h1 {
         font-size: 2.5rem;
+        font-family: 'Croissant One', cursive;
     }
 
     h2 {
         font-size: 1.8rem;
+        font-family: 'Hedvig Letters Sans', sans-serif;
 
     }
 
@@ -556,6 +568,7 @@ footer p {
         font-size: 1.2rem;
         margin: 2% 5%;
         line-height: 1.2;
+        font-family: 'Hedvig Letters Sans', sans-serif;
     }
 
     .hero-container {
@@ -583,6 +596,7 @@ footer p {
         padding: 40px 30px;
         margin-top: 60px;
         font-size: 1.5rem;
+        font-family: 'Hedvig Letters Sans', sans-serif;
     }
 
     footer p {
