@@ -83,6 +83,7 @@ p {
     width: 80%;
     position: absolute;
     display: none;
+    z-index: 1000;
 }
 
 .overlay span {
@@ -382,14 +383,21 @@ section {
     flex-direction: column;
 }
 
+.hemlock-page-img {
+    animation: sway-gentle 3.5s ease-in-out infinite;
+}
+
 .apple-page-img {
     height: 100%;
     width: 100%;
+    animation: sway-gentle 4s ease-in-out infinite;
 }
 
 .hyperion-page-img {
     width: 50%;
+    animation: sway-gentle 4s ease-in-out infinite;
 }
+
 
 footer {
     text-align: center;
@@ -406,13 +414,21 @@ footer p {
 }
 @keyframes float {
     0%, 100% {
-        transform: translate(-3px);
+        transform: translate(0px);
     }
     50% {
         transform: translate(-8px);
 
     }
-    
+     }
+ @keyframes sway-gentle{
+    0%, 100% {
+        transform: rotate(0deg);
+     }
+     50% {
+        transform: rotate(1deg);
+
+     }   
 }
 
 @media (min-width: 480px) {
