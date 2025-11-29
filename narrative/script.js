@@ -19,3 +19,6 @@ let treesMenu = document.querySelector(".dropdown-menu");
 treesBtn.addEventListener("click", function () {
     treesMenu.classList.toggle("show");
 });
+
+const clickSound = new Audio(sounds/wave.wav);
+clickSound.play();
