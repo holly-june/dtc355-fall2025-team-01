@@ -35,8 +35,14 @@ h2 {
 }
 
 h1 {
-    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    font-size: 1.7rem;
     font-family: 'Croissant One', cursive;
+        text-shadow: 
+        1px 1px 0px #5a4a3a,
+        3px 3px 4px rgba(0, 0, 0, 0.1);
+
+
 }
 
 
@@ -197,7 +203,7 @@ nav.mobile-menu {
     margin-top: 70px;
     margin-right: 10px;
     background-color: #A5B289;
-    border: 2px solid black;
+    border-radius: 2.5px;
 }
 
 .dropdown {
@@ -339,6 +345,7 @@ section {
 .trees-title-mobile h3 {
     margin-top: 0px;
     margin-bottom: 3px;
+    font-family: 'Croissant One', cursive;
 }
 .trees-title-mobile h4 {
     margin-top: 0px;
@@ -358,6 +365,7 @@ section {
 }
 .trees-title-desktop h3 {
     margin-top: 0px;
+    font-family: 'Croissant One', cursive;
 }
 
 
