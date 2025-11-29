@@ -26,6 +26,7 @@ header {
     padding: 15px 20px;
     margin: 0;
     box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 h1,
@@ -78,12 +79,13 @@ p {
 }
 
 .overlay {
-    border: 2px solid black;
+    border-radius: 8px;
     background-color: #A5B289;
     width: 80%;
     position: absolute;
     display: none;
     z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.09);
 }
 
 .overlay span {
@@ -256,7 +258,15 @@ nav.mobile-menu {
     align-items: center;
     text-align: center;
     font-size: 0.9rem;
-    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Croissant One', cursive;
+    text-decoration:none;
+    color: #5a4a3a;
+    margin-top: 10px;
+}
+
+.tree-link:hover {
+    color: #7a9b6f;
+    transform: scale(1.05);
 }
 
 .roots-hemlock {
@@ -323,7 +333,16 @@ section {
 .trees-title-mobile h4 {
     text-align: left;
 }
-
+.trees-title-mobile h2 {
+    margin-bottom: 3px;
+}
+.trees-title-mobile h3 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+.trees-title-mobile h4 {
+    margin-top: 0px;
+}
 
 .trees-title-desktop {
     display: none;
@@ -334,6 +353,13 @@ section {
 .trees-title-desktop h4 {
     text-align: left;
 }
+.trees-title-desktop h2 {
+    margin-bottom: 3px;
+}
+.trees-title-desktop h3 {
+    margin-top: 0px;
+}
+
 
 .pinecone-and-tree {
     display: flex;

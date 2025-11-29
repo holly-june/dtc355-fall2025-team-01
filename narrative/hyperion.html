@@ -103,7 +103,15 @@
     <script>
         function openHyperionFact() {
             document.getElementById("hyperion-fact").style.display = "block";
+            
+            const pinecone = document.querySelector('.pinecone-link');
+            pinecone.classList.add('shake');
+            setTimeout(() => pinecone.classList.remove('shake'), 300);
+
+            const clickSound = new Audio('sounds/shimmer-bell.wav');
+            clickSound.play();
         }
+
 
         function closeHyperionFact() {
             document.getElementById("hyperion-fact").style.display = "none";
