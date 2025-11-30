@@ -39,7 +39,7 @@ h1 {
     font-size: 1.7rem;
     font-family: 'Croissant One', cursive;
         text-shadow: 
-        1px 1px 0px #5a4a3a,
+        1px 1px 0px #a69c91,
         3px 3px 4px rgba(0, 0, 0, 0.1);
 
 
@@ -193,7 +193,7 @@ nav a:hover {
 
 #mobile-btn .bar {
     width: 24px;
-    height: 4px;
+    height: 2px;
     background: #E6E1D0;
     border-radius: 15%;
 }
@@ -217,7 +217,6 @@ nav.mobile-menu {
     top: 0;
     left: -216px;
     background: #A5B289;
-    border: 2px solid black;
     display: none;
     padding: 15px;
 }
@@ -268,6 +267,8 @@ nav.mobile-menu {
     text-decoration:none;
     color: #5a4a3a;
     margin-top: 10px;
+   
+    
 }
 
 .tree-link:hover {
@@ -307,6 +308,7 @@ nav.mobile-menu {
     max-width: 360px;
     margin: 0 auto;
     animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
 }
 
 .index-hemlock {
@@ -380,8 +382,10 @@ section {
     height: auto;
     width: 30%;
     margin: 60px auto 50px auto;
+    animation: shake 4s ease-in-out infinite;
 
 }
+
 
 .about-trees {
     display: flex;
@@ -483,6 +487,7 @@ footer p {
     .roots-img {
         width: 60%;
         margin: 20px auto;
+        filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
     }
 
     .hyperion-apple {
@@ -529,6 +534,7 @@ footer p {
         left: -160px;
         background: #A5B289;
         display: none;
+        border: none;
     }
 
     .dropdown-menu a {
@@ -637,6 +643,7 @@ footer p {
         width: 40%;
         height: auto;
         object-fit: contain;
+         filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
 
     }
 
