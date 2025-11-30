@@ -588,6 +588,7 @@ footer p {
         display: flex;
         flex-direction: row;
         margin: auto 5%;
+        justify-content: start;
     }
 
     .trees-title-mobile {
@@ -597,8 +598,7 @@ footer p {
     .trees-title-desktop {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        padding-left: 5%;
+        text-align: left;  
     }
 
     .index-img-links {
