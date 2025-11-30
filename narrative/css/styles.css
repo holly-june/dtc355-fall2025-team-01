@@ -108,6 +108,7 @@ p {
     padding: 10px 20px;
     margin-bottom: 50px;
     background-color: #DBC1AA;
+ 
 }
 
 .pinecone-logo {
@@ -680,7 +681,7 @@ footer p {
     .trees-title-desktop h3 {
         font-size: 1.5rem;
         text-align: left;
-        font-family: 'Hedvig Letters Sans', sans-serif;
+        font-family: 'Croissant One', cursive;
     }
 
     .trees-title-desktop h4 {
@@ -715,6 +716,7 @@ footer p {
     .hero-container {
         padding: 50px 30px;
         margin-bottom: 50px;
+        width: 100%;
     }
 
     .apple-page-img {
