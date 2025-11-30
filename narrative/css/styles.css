@@ -383,6 +383,7 @@ section {
     width: 30%;
     margin: 60px auto 50px auto;
     animation: shake 4s ease-in-out infinite;
+    filter: drop-shadow(0 8px 12px rgba(92, 89, 89, 0.3));
 
 }
 
@@ -643,7 +644,7 @@ footer p {
         width: 40%;
         height: auto;
         object-fit: contain;
-         filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
 
     }
 
