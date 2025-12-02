@@ -714,6 +714,7 @@ footer p {
     }
 
     .hero-container {
+        box-sizing: border-box;
         padding: 50px 30px;
         margin-bottom: 50px;
         width: 100%;
