@@ -98,6 +98,10 @@ p {
     cursor: pointer;
 }
 
+.exit-btn {
+    font-size: 32px;
+}
+
 .click-pinecone {
     width: 10%;
     height: 10%;
@@ -268,8 +272,8 @@ nav.mobile-menu {
     text-decoration:none;
     color: #5a4a3a;
     margin-top: 10px;
-   
-    
+    transition: all(1s);
+    /* needs adjusting */
 }
 
 .tree-link:hover {
