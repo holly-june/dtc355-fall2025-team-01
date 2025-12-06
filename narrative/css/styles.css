@@ -175,7 +175,7 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -246,8 +246,8 @@ nav.mobile-menu {
 }
 
 .dropdown-toggle:hover {
-    text-decoration: underline;
     font-style: italic;
+    font-weight: bold;
 }
 
 .index-img-links {
